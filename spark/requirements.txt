@@ -1,0 +1,11 @@
+faker
+pandas
+numpy
+matplotlib
+geopandas
+pyarrow
+shapely
+folium
+osmnx
+psycopg2
+apache-airflow
