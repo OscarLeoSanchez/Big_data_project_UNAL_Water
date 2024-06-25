@@ -153,6 +153,7 @@ El archivo `spark_jobs/process_gold.py` se encarga de leer los datos de la carpe
 
 ### Instalaciones en el contenedor de spark
 
+```bash
 wget https://jdbc.postgresql.org/download/postgresql-42.5.0.jar
 
 curl -O https://jdbc.postgresql.org/download/postgresql-42.5.0.jar
@@ -166,3 +167,4 @@ spark-submit --jars /opt/spark/jars/postgresql-42.5.0.jar process_gold.py
 apt-get update
 
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' unalwater_db
+```
